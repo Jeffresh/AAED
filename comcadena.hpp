@@ -14,7 +14,7 @@ bool compcadena(const char* cad)
 
 	i++;
 
-	while(aux.tope()== *(cad+i) && !aux.vacia())
+	while(!aux.vacia() && aux.tope()== *(cad+i))
 	{
 		aux.pop();
 		i++;
