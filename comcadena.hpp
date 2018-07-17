@@ -1,12 +1,9 @@
-
-struct Pila;
-
-
+#include "pila_enla.hpp"
 
 bool compcadena(const char* cad)
 {
 
-	Pila<char> aux;
+	Pila<char> aux{};
 	int i = 0;
 
 	while(*cad!= '&')

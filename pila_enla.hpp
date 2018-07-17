@@ -30,7 +30,7 @@ private:
 
 		nodo(const T& e, nodo* p = 0) : elto(e), sig(p)
 		{}
-	}
+	};
 
 	nodo* tope_;
 
@@ -44,20 +44,20 @@ Pila<T>::Pila():tope_(0)
 {}
 
 template<typename T>
-const Pila<T>& Pila<T>::Pila(const Pila<T>& P):tope_(0)
+Pila<T>::Pila(const Pila<T>& P):tope_(0)
 {
 	copiar(P);
 }
 
 template<typename T>
-const Pila<T>& Pila<T>::operator =(const Pila<T>& P)
+Pila<T>& Pila<T>::operator =(const Pila<T>& P)
 {
 	if(this != &P)
 	{
 		this ->~Pila();
 		copiar(P);
 	}
-return *this:
+return *this;
 }
 
 template<typename T>
@@ -97,7 +97,7 @@ inline void Pila<T>::push(const T& x)
 }
 
 template<typename T>
-Pila<T>~Pila()
+Pila<T>::~Pila()
 {
 	nodo* p;
 
@@ -110,7 +110,7 @@ Pila<T>~Pila()
 }
 
 template<typename T>
-void Pila<T>::copiar(const Pila<T> P)
+void Pila<T>::copiar(const Pila<T>& P)
 {
 
 	if(this!=&P && !P.vacia())
