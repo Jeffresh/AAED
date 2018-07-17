@@ -6,7 +6,7 @@ bool compcadena(const char* cad)
 	Pila<char> aux{};
 	int i = 0;
 
-	while(*cad!= '&')
+	while(*(cad+i)!= '&')
 	{
 		aux.push(*(cad+i));
 		i++;
