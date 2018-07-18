@@ -1,6 +1,6 @@
-#include "pila_enla.hpp"
+#include "lib.hpp"
 
-bool compcadena(const char* cad)
+bool cmpstr(const char* cad)
 {
 
 	Pila<char> aux{};

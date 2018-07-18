@@ -1,8 +1,7 @@
 #include <iostream>
 #include <fstream>
 
-#include "pila_enla.hpp"
-#include "comcadena.hpp"
+#include "lib.hpp"
 
 
 int main()
@@ -15,9 +14,9 @@ int main()
 	std::getline(file,str);
 	file.close();
 
-	if(compcadena(str.c_str()))
-		std::cout<<"Capicua!";
+	if(cmpstr(str.c_str()))
+		std::cout<<"Capicua!"<<std::endl;
 	else
-		std::cout<<" Not Capicua";
+		std::cout<<" Not Capicua"<<std::endl;
 
 }
