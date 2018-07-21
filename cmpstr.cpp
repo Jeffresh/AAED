@@ -6,6 +6,8 @@ bool cmpstr(const char* cad)
 	Pila<char> aux{};
 	int i = 0;
 
+	std::cout<<cad<<std::endl;
+
 	while(*(cad+i)!= '&')
 	{
 		aux.push(*(cad+i));
@@ -21,6 +23,6 @@ bool cmpstr(const char* cad)
 	}
 
 
-	return aux.vacia();
+	return aux.vacia() ;
 
 }
