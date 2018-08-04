@@ -123,7 +123,7 @@ void Pila<T>::copiar(const Pila<T>& P)
 		while(q)
 		{
 
-			p->sig = new nodo(q->tope_);
+			p->sig = new nodo(q->elto);
 			p = p->sig;
 			q = q->sig;
 

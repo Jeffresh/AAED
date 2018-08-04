@@ -19,18 +19,25 @@ int main()
 	else
 		std::cout<<" Not Capicua"<<std::endl;*/
 
-	std::getline(file,str);
+	/*std::getline(file,str);
 	file.close();
 
 	if(cmpsec(str.c_str()))
 		std::cout<<"Capicua!"<<std::endl;
 	else
 		std::cout<<"Not Capicua"<<std::endl;
+		*/
 
+	Pila<int> P;
 
+	for(int i=0; i <=7 ; i++)
+		P.push(i);
 
+	Pila<int> Q =invstack(P,3,5);
 
-
-
-
+	while ( !Q.vacia())
+	{
+		std::cout<<Q.tope()<<std::endl;
+		Q.pop();
+	}
 }
