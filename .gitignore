@@ -1,0 +1,23 @@
+#compiled source#
+#################
+
+*.o
+*.so
+*.sh
+
+#packages#
+##########
+
+*.iso
+*.jar
+*.tar
+*.rar
+*.zip
+
+
+#log and databases #
+####################
+
+*.log
+*.sql
+*.sqlite
